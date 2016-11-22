@@ -1,12 +1,66 @@
-export default class gameObj {
+ export default class gameObj {
 
 	constructor( name ) {
+
+		//inherits from generic Javascript Object;
 
 		console.log('in gameObj');
 
 		this.name = name;
+		this.id = this.setId();
+
+		
+
+	}//end of construcor
+
+	/**
+	* get the id assigned to this object.
+	* @returns [string] the name
+	*/
+
+	getId() {
+
+		return this.id;
 	}
 
+	/** 
+	* get the name assigned to this object
+	* @returns name
+	*/
+
+	getName() {
+
+		return this.name;
+
+	}
+
+	setName ( newName ) {
+
+		this.name = newName;
+
+	}
+
+	/** 
+
+	*generates a unique id for every game obkect
+	* @link stackoverflow.com/questions/105034/creae-guid-uuid-in-javascript
+
+	*/
 
 
-}
+	  setId () {
+        var d = new Date().getTime();
+        if (window.performance && typeof window.performance.now === "function") {
+            d += performance.now(); //use high-precision timer if available
+        }
+        var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = (d + Math.random()*16)%16 | 0;
+            d = Math.floor(d/16);
+            return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+        });
+        return uuid;
+    }//end of set id
+
+
+
+} //end of class
