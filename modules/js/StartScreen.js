@@ -9,7 +9,22 @@ export default class StartScreen extends Screen {
 
 		this.dom = document.getElementById( 'start-screen' );
 
+		this.getStartButton();
+
+		this.startButton.addEventListener('click', function() {
+			alert('I am in screen:' + this.name );
+
+			window.gameScreens[ 'start' ].hide(); //hide myself
+
+			window.gameScreens[ 'game' ].show();//show self
+
+		});
+
+		this.getExitButton();
+
 	} // end of constructor
+
+
 	
 
 }// end of class

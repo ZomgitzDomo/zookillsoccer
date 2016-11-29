@@ -8,16 +8,20 @@ export default class Screen extends gameObj {
 		super( name );
 	}//end of constructor
 
-	show () {
+	getStartButton() {
 
-		this.dom.style.display = 'block';
+		this.startButton = this.dom.getElementsByClassName( 'game-start' )[0];
+
+		
+
+	}
+
+	getExitButton() {
+
+		this.exitButton = this.dom.getElementsByClassName( 'game-exit' )[0];
 
 	}
 
-	hide () {
-
-		this.dom.style.display = 'none';
-
-	}
+	
 
 }//end of class

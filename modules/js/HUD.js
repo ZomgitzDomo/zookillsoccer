@@ -9,4 +9,6 @@ export default class HUD extends gameObj{
 
 	}//end of constructor
 
+	
+
 }//end of class

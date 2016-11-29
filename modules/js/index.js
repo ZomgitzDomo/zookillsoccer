@@ -22,17 +22,28 @@ import Dynamic from './Dynamic.js';
 
 console.log('loading game.');
 
+//global storage of all screebs created
+window.gameScreens = [];
+
 window.startScreen = new StartScreen('ZooKill start');
+window.gameScreens[ 'start' ] = window.startScreen;
 window.gameScreen = new GameScreen('zookill Game');
+window.gameScreens[ 'game' ] = window.gameScreen;
 
 window.wonScreen = new WonScreen('zookill You won');
+window.gameScreens[ 'won' ] = window.wonScreen;
 window.lossScreen = new LossScreen('zookill You loss');
+window.gameScreens[ 'loss' ] = window.lossScreen;
 
 window.score = new Score('game score object');
 
 
 window.zoo = new Zoo('zoo object');
 window.cage = new Cage('cage object');
+
+
+//start the game.....
+window.startScreen.show();
 
 
 

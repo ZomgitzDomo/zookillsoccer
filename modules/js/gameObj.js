@@ -61,6 +61,32 @@
         return uuid;
     }//end of set id
 
+    show () {
+
+		this.dom.style.display = 'block';
+
+	}
+
+	hide () {
+
+		this.dom.style.display = 'none';
+
+	}
+
+	setBackgroundImage( imgPath ) {
+
+		this.dom.style.backgroundImage = "url('" + imgPath + "')";
+	}
+
+	setForegroundimage( imgPath ) {
+
+		let img = new Image();
+
+		img.src = imgPath;
+
+		this.dom.appendChild( img );
+	}
+
 
 
 } //end of class

@@ -9,6 +9,10 @@ export default class LossScreen extends Screen {
 
 		this.dom = document.getElementById( 'loss-screen' );
 
+		this.getStartButton();
+
+		this.getExitButton();
+
 	} // end of constructor
 	
 

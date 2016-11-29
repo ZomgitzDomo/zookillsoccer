@@ -7,6 +7,8 @@ export default class Score extends HUD {
 
 		super( name );
 
+		this.dom = document.getElementById( 'game-score' );
+
 	} // end of constructor
 	
 

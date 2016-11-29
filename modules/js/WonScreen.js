@@ -9,6 +9,10 @@ export default class WonScreen extends Screen {
 
 		this.dom = document.getElementById( 'won-screen' );
 
+		this.getStartButton();
+
+		this.getExitButton();
+
 	} // end of constructor
 	
 
