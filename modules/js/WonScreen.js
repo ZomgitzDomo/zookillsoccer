@@ -9,6 +9,8 @@ export default class WonScreen extends Screen {
 
 		this.dom = document.getElementById( 'won-screen' );
 
+		this.setBackgroundImage( 'img/screens/won-screen.png' );
+
 		this.getStartButton();
 
 		this.getExitButton();

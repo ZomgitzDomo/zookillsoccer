@@ -27,11 +27,13 @@ window.gameScreens = [];
 
 window.startScreen = new StartScreen('ZooKill start');
 window.gameScreens[ 'start' ] = window.startScreen;
+
 window.gameScreen = new GameScreen('zookill Game');
 window.gameScreens[ 'game' ] = window.gameScreen;
 
 window.wonScreen = new WonScreen('zookill You won');
 window.gameScreens[ 'won' ] = window.wonScreen;
+
 window.lossScreen = new LossScreen('zookill You loss');
 window.gameScreens[ 'loss' ] = window.lossScreen;
 

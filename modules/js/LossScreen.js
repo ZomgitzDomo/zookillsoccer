@@ -8,6 +8,7 @@ export default class LossScreen extends Screen {
 		super( name );
 
 		this.dom = document.getElementById( 'loss-screen' );
+		this.setBackgroundImage( 'img/screens/loss-screen.png' );
 
 		this.getStartButton();
 

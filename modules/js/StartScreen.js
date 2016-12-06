@@ -9,14 +9,24 @@ export default class StartScreen extends Screen {
 
 		this.dom = document.getElementById( 'start-screen' );
 
+		//set the background image
+
+		this.setBackgroundImage( 'img/screens/start-screen.png' );
+
+		//search for a 'start' button in the this.dom HTML markup. Note: will fail if no button present!
+
 		this.getStartButton();
 
-		this.startButton.addEventListener('click', function() {
+		//wite up the Start button to load the GameScreen
+
+		this.startButton.addEventListener('click', () => {
 			alert('I am in screen:' + this.name );
 
 			window.gameScreens[ 'start' ].hide(); //hide myself
 
 			window.gameScreens[ 'game' ].show();//show self
+
+			window.gameScreens[ 'game' ].build(); //rebuild the game with all its obects
 
 		});
 

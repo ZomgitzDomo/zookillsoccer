@@ -87,6 +87,25 @@
 		this.dom.appendChild( img );
 	}
 
+	//set the size of an object, in pexils.
+	setSize( width, height ) {
+
+		this.dom.style.width = width + 'px';
+
+		this.dom.style.height = height + 'px';
+
+	}
+
+	//set the position of an oject, relative to the enclosing screen object.
+	setPosition( top, left ){
+
+		this.dom.style.top = top + 'px';
+
+		this.dom.style.left = left + 'px';
+
+
+	}
+
 
 
 } //end of class
