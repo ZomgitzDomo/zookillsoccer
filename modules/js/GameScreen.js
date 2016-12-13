@@ -25,9 +25,13 @@ export default class GameScreen extends Screen {
 
 		this.dom.appendChild( this.zoo.dom );
 
-		this.trump = new Trump( 'Donald Presidentia Trump' );
+		this.trump = new Trump( 'Donald Presidentia Trump', 440, 245 );
 
-		this.player = new Player( 'myself' );
+	
+
+		this.player = new Player( 'myself', 500, 245, this.trump);
+
+
 	}
 
 }// end of class

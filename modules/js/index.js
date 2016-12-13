@@ -40,8 +40,8 @@ window.gameScreens[ 'loss' ] = window.lossScreen;
 window.score = new Score('game score object');
 
 
-window.zoo = new Zoo('zoo object');
-window.cage = new Cage('cage object');
+//window.zoo = new Zoo('zoo object');
+//window.cage = new Cage('cage object');
 
 
 //start the game.....

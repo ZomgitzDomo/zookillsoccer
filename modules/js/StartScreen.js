@@ -20,7 +20,7 @@ export default class StartScreen extends Screen {
 		//wite up the Start button to load the GameScreen
 
 		this.startButton.addEventListener('click', () => {
-			alert('I am in screen:' + this.name );
+			//alert('I am in screen:' + this.name );
 
 			window.gameScreens[ 'start' ].hide(); //hide myself
 
